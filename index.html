@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DEVELOPMENT IS MY PASSION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Normally, we'd use a consistent font. For irony, we'll use several! -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Times+New+Roman&family=Courier+New&family=Lobster&family=Impact&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for extra ironic flair */
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Default to a "classic" */
+            background-color: #0000FF; /* Bright blue background */
+            color: #FFFF00; /* Bright yellow text */
+            overflow-x: hidden; /* Prevent horizontal scroll from badly placed elements */
+        }
+        .font-comic { font-family: 'Comic Sans MS', cursive, sans-serif; }
+        .font-courier { font-family: 'Courier New', Courier, monospace; }
+        .font-lobster { font-family: 'Lobster', cursive; }
+        .font-impact { font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+        /* Blinking text effect - a true classic */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .blinking-text {
+            animation: blink 1s linear infinite;
+        }
+
+        /* Marquee - needs JavaScript if we can't use the <marquee> tag (which is deprecated) */
+        /* For simplicity and irony, we'll just make a div that looks like it should scroll */
+        .fake-marquee {
+            background-color: #FF00FF; /* Magenta background */
+            color: #00FF00; /* Lime green text */
+            padding: 10px;
+            white-space: nowrap;
+            overflow: hidden; /* Hide the text that would "scroll" out */
+            border: 3px dashed #FFFF00; /* Yellow dashed border */
+            text-align: center; /* Center the text that doesn't actually scroll */
+        }
+
+        /* 3D effect buttons - very Web 1.0 */
+        .btn-3d {
+            background-color: #C0C0C0; /* Silver */
+            border-style: outset;
+            border-color: #E0E0E0 #A0A0A0 #A0A0A0 #E0E0E0;
+            border-width: 4px;
+            padding: 5px 10px;
+            font-weight: bold;
+            color: black;
+        }
+        .btn-3d:active {
+            border-style: inset;
+        }
+
+        /* Ensure content is somewhat centered but with potential for chaos */
+        .main-container {
+            max-width: 900px; /* A bit wider to allow for more "design" */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: #008000; /* Dark green content background */
+            border: 5px solid #FF0000; /* Bright red border */
+        }
+
+        /* Image styling for that "under construction" vibe */
+        .construction-gif {
+            width: 100px;
+            height: auto;
+            margin: 0 auto; /* Center it if it's in a block */
+        }
+
+        /* Deliberately misaligned element */
+        .misaligned-box {
+            background-color: #FFA500; /* Orange */
+            color: #000000; /* Black text */
+            padding: 15px;
+            width: 70%;
+            margin-left: 25%; /* Push it off-center */
+            border: 3px dotted #FFFFFF; /* White dotted border */
+            transform: rotate(-3deg); /* Slightly tilted */
+        }
+    </style>
+</head>
+<body class="p-4 selection:bg-pink-500 selection:text-white">
+
+    <!-- Header with clashing fonts and colors -->
+    <header class="text-center p-6 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 mb-5 border-4 border-dashed border-yellow-300 rounded-lg">
+        <h1 class="font-impact text-5xl md:text-7xl text-green-300 tracking-wider" style="text-shadow: 3px 3px #000000;">
+            WELCOME 2 MY CYBER DOMAIN!!!
+        </h1>
+        <p class="font-comic text-xl text-white mt-2">The <strong class="blinking-text text-yellow-300">BEST</strong> place for <em class="font-lobster text-2xl text-cyan-300">CUTTING EDGE</em> web stuff!</p>
+    </header>
+
+    <!-- Fake Marquee -->
+    <div class="fake-marquee my-5">
+        <p class="font-courier text-lg">*** LATEST NEWS: I just learned HTML tables! *** SITE UPDATED: Whenever I feel like it! *** CHECK OUT MY COOL BUTTONS! ***</p>
+    </div>
+
+    <div class="main-container rounded-xl shadow-2xl">
+        <!-- Main Passion Declaration -->
+        <section class="text-center my-8 p-6 bg-yellow-400 border-4 border-dotted border-purple-700 rounded-md">
+            <h2 class="font-lobster text-4xl md:text-6xl text-red-600 mb-4" style="text-shadow: 2px 2px #FFFFFF;">
+                Web Development is my <span class="blinking-text font-impact text-5xl md:text-7xl text-blue-700">PASSION</span>!!!
+            </h2>
+            <img src="https://placehold.co/150x100/FF00FF/FFFFFF?text=Amazing+Graphic!" alt="Amazing Graphic Here" class="mx-auto my-4 border-4 border-black rounded-full shadow-lg" onerror="this.src='https://placehold.co/150x100/CCCCCC/000000?text=GIF+Failed+LOL'; this.alt='Failed to load amazing graphic'">
+            <p class="font-comic text-lg text-indigo-700">
+                I live and breathe HTML, CSS, and a little bit of JavaScript (when it works).
+                My designs are <strong class="font-impact text-xl text-green-600">INTUITIVE</strong> and <em class="font-courier text-xl text-pink-600">USER-FRIENDLY</em> (mostly).
+            </p>
+        </section>
+
+        <!-- Skills Section - intentionally basic and poorly presented -->
+        <section class="my-8 p-4 bg-teal-500 border-2 border-solid border-orange-500 rounded-lg">
+            <h3 class="font-impact text-3xl text-center text-yellow-300 mb-3" style="text-decoration: underline wavy red 3px;">My Incredible Skillz:</h3>
+            <ul class="list-disc list-inside font-courier text-white space-y-1 pl-5 md:pl-10 columns-2">
+                <li>HTML (Headings, Paragraphs, Bold!)</li>
+                <li>CSS (Colors! Backgrounds!)</li>
+                <li>Copying & Pasting from StackOverflow</li>
+                <li>Making text BLINK</li>
+                <li>Using MANY fonts</li>
+                <li><span style="color: #FF0000; background-color: #FFFF00;">IMPORTANT:</span> Centering divs (sometimes)</li>
+                <li>Image Optimization (making them smol)</li>
+                <li>Responsive Design (it looks okay on my monitor)</li>
+            </ul>
+            <img src="https://placehold.co/100x80/00FF00/000000?text=Skillz+Badge" alt="Skillz Badge" class="construction-gif mt-4 rounded-sm" onerror="this.src='https://placehold.co/100x80/FF0000/FFFFFF?text=Badge+Error'; this.alt='Skillz badge error'">
+        </section>
+
+        <!-- Portfolio Section - broken links and simple boxes -->
+        <section class="my-8 p-4 bg-pink-300 border-4 border-dashed border-green-600 rounded-xl">
+            <h3 class="font-lobster text-3xl text-center text-purple-700 mb-4">My Groundbreaking Portfolio</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-orange-300 p-4 border-2 border-black rounded-md text-center">
+                    <h4 class="font-impact text-xl text-red-700">Project 1: Cool Site</h4>
+                    <img src="https://placehold.co/200x150/777777/FFFFFF?text=Super+Site+Screenshot" alt="Cool Site Screenshot" class="w-full h-32 object-cover my-2 border-2 border-gray-500" onerror="this.src='https://placehold.co/200x150/FF0000/FFFFFF?text=Img+Broken!'; this.alt='Image broken'">
+                    <p class="font-comic text-sm text-blue-800">This was a site. It was cool.</p>
+                    <a href="#brokenlink1" class="btn-3d mt-2 inline-block">View Project (don't click)</a>
+                </div>
+                <div class="misaligned-box"> <!-- Intentionally misaligned -->
+                    <h4 class="font-impact text-xl text-green-700">Project 2: Awesome App</h4>
+                     <img src="https://placehold.co/200x150/0000FF/EEEEEE?text=App+Mockup" alt="Awesome App Mockup" class="w-full h-32 object-cover my-2 border-2 border-yellow-500" onerror="this.src='https://placehold.co/200x150/FF0000/FFFFFF?text=Img+Broken!'; this.alt='Image broken'">
+                    <p class="font-comic text-sm text-red-800">This app is awesome. Trust me.</p>
+                    <button class="btn-3d mt-2">Learn More (maybe)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook - Non-functional -->
+        <section class="my-8 p-6 bg-gray-300 border-2 border-solid border-black rounded">
+            <h3 class="font-courier text-2xl text-center text-black mb-3">Sign My Guestbook! (It's state-of-the-art)</h3>
+            <form class="text-center">
+                <label for="guestName" class="font-comic text-black">Name:</label>
+                <input type="text" id="guestName" name="guestName" class="border-2 border-black p-1 mb-2 font-comic text-black bg-white w-3/4 md:w-1/2 rounded-sm"><br>
+                <label for="guestMessage" class="font-comic text-black">Message:</label>
+                <textarea id="guestMessage" name="guestMessage" rows="3" class="border-2 border-black p-1 mb-2 font-comic text-black bg-white w-full md:w-3/4 rounded-sm"></textarea><br>
+                <button type="button" class="btn-3d font-impact text-lg" onclick="alert('Thanks for signing! (Not really, this button does nothing.)')">SUBMIT YOUR PRAISE!</button>
+            </form>
+            <p class="text-center mt-4 font-comic text-xs text-gray-700">(Guestbook entries are stored in a very secure, invisible place.)</p>
+        </section>
+
+        <!-- Under Construction GIF -->
+        <div class="text-center my-5">
+            <img src="https://placehold.co/120x100/FFFF00/000000?text=Under+Construction" alt="Under Construction" class="construction-gif rounded-lg shadow-md" onerror="this.src='https://placehold.co/120x100/CCCCCC/000000?text=GIF+Missing'; this.alt='Under construction GIF missing'">
+            <p class="font-courier text-sm text-yellow-300 mt-1">This page is PERMANENTLY under construction!</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-10 p-5 bg-black border-t-4 border-red-600">
+        <p class="font-courier text-sm text-gray-400">
+            &copy; 1995-<span id="currentYear"></span> My Awesome Web Creations. All rights reserved (probably).
+        </p>
+        <p class="font-comic text-xs text-gray-500">
+            This page was lovingly handcrafted with Notepad and pure <strong class="blinking-text text-red-400">PASSION</strong>.
+        </p>
+        <p class="font-times text-xs text-gray-600 mt-2">
+            Visitors: <span class="font-impact text-yellow-300">1,420,069</span> (approximately)
+        </p>
+        <script>
+            // Script to set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Override the alert for the guestbook to show a custom message in the page
+            // because alert() is not allowed.
+            const guestbookButton = document.querySelector('button[onclick*="alert"]');
+            if (guestbookButton) {
+                guestbookButton.onclick = function() {
+                    let messageDiv = document.getElementById('guestbookMessage');
+                    if (!messageDiv) {
+                        messageDiv = document.createElement('div');
+                        messageDiv.id = 'guestbookMessage';
+                        messageDiv.className = 'mt-4 p-3 bg-green-500 text-white font-comic text-center rounded-md';
+                        this.form.appendChild(messageDiv);
+                    }
+                    messageDiv.textContent = 'Thanks for signing! (Not really, this button does nothing, but at least this message appeared!)';
+                }
+            }
+        </script>
+    </footer>
+
+</body>
+</html>
